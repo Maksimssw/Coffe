@@ -1,0 +1,23 @@
+@import '../app/app.scss';
+
+.search{
+    width: 100%;
+    margin-top: 60px;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.card{
+    width: 100%;
+    margin-top: 61px;
+    .container{
+        display: grid;
+        grid-column-gap: 70px;
+        grid-row-gap: 60px;
+        grid-template-columns: 220px 220px 220px;
+        margin: 0 auto;
+    }
+}

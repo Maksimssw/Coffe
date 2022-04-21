@@ -1,0 +1,96 @@
+@import '../../app/app.scss';
+
+.beans{
+    width: 100%;
+    margin-top: 72px;
+    &_wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &-ph{
+            filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
+            width: 392px;
+            height: 355px;
+            img{
+                width: 100%;
+                height: 100%;
+                margin: 0 auto;
+            }
+        }
+        &_text{
+            width: 346px;
+            &-title{
+                @include font($black, 400, 24px, 34px);
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            &-extremity{
+                margin-bottom: 16px;
+                margin-top: 25px;
+                span{
+                    @include font($black, 700, 15px, 20px);
+                }
+            }
+            &-afraid{
+                span{
+                    @include font($black, 700, 15px, 20px);
+                }
+            }
+            &-price{
+                margin-top: 30px;
+                p{
+                    @include font($white, 700, 16px, 20px);
+                }
+                &-text{
+                    @include font($black, 700, 20px, 20px);
+                    margin-left: 10px;
+                }
+                &-waid{
+                    @include font($black, 700, 15px, 20px);
+                }
+            }
+            a{
+                text-decoration: none;
+                display: block;
+                width: 70px;
+                text-align: center;
+                margin: 0 auto; 
+                margin-top: 20px;
+                position: relative;
+                transition: 0.3s all;
+                @include font($black, 700, 15px, 20px);
+                &::before{
+                    content: '';
+                    top: 100%;
+                    left: 0;
+                    position: absolute;
+                    height: 0px;
+                    width: 0%;
+                    transition: 0.3s all;
+                    background: #000;
+                }
+                &:hover{
+                    &::before{
+                        width: 100%;
+                        height: 1px;
+                    }
+                }
+            }
+        }
+    }
+    p{
+        @include font($black, 400, 15px, 20px);
+    }
+    .container{
+        hr{
+            width: 240px;
+            height: 1px;
+            background-color: $black;
+            margin: 0 auto;
+            margin-top: 60px;
+            box-sizing: content-box;
+            border: none;
+            overflow: visible;
+        }
+    }
+}

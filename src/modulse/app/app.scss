@@ -1,0 +1,60 @@
+$black: #000;
+$white: #fff;
+
+@mixin font($color, $weight, $fontSize, $fontLine) {
+    color: $color;
+    font-weight: $weight;
+    font-size: $fontSize;
+    line-height: $fontLine;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.logo{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    &_line_left{
+        width: 60px;
+        height: 1px;
+        background-color: $black;
+        margin-right: 25px;
+    }
+    &_line_right{
+        width: 60px;
+        height: 1px;
+        background-color: $black;
+        margin-left: 25px;
+    }
+    img{
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
+}
+
+.white{
+    background: $white;
+}
+
+
+img{
+    display: block;
+}

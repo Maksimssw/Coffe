@@ -1,0 +1,47 @@
+@import "../app/app.scss";
+
+.buttons_wrapper{
+    display: flex;
+    align-items: center;
+    width: 326px;
+    &-filter{
+        @include font($black, 400, 14px, 20px);
+        margin-right: 35px;
+    }
+    &-list{
+        @include font($black, 400, 12px, 17px);
+        width: 75px;
+        background: $white;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+        margin-right: 5px;
+        border: none;
+        outline: none;
+        height: 30px;
+        transition: 0.3s all;
+        font-family: 'Merienda', cursive, sans-serif;
+        &:last-child{
+            margin-right: 0;
+            border-radius: 0px 4px 4px 0px;
+        }
+        &:hover{
+            background: $black;
+            color: $white;
+            transform: translateY(5px);
+        }
+    }
+    select{
+        outline: none;
+        background: none;
+        border: 0;
+        text-align: center;
+        background: #2f2d2d;
+        height: 30px;
+        border-radius: 10px;
+        color: #fff;
+    }
+}        
+
+.active{
+    background: $black;
+    color: $white;
+}

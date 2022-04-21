@@ -1,0 +1,27 @@
+@import '../app/app.scss';
+
+.look_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-text{
+        @include font($black, 400, 14px, 20px);
+        margin: 0;
+        margin-right: 19px;
+    }
+    &-input{
+        outline: none;
+        border: none;
+        background: #FFFFFF;
+        box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 4px;
+        width: 180px;
+        height: 30px;
+        @include font($black, 400, 14px, 17px);
+        font-family: 'Merienda', cursive, sans-serif;
+    }
+}
+
+::placeholder {
+    text-align: center;
+}

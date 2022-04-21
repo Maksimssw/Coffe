@@ -1,0 +1,61 @@
+@import '../../app/app.scss';
+
+.beans{
+    width: 100%;
+    margin-top: 72px;
+    &_wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        &-ph{
+            filter: drop-shadow(5px 5px 30px rgba(0, 0, 0, 0.25));
+        }
+        &_text{
+            width: 346px;
+            &-title{
+                @include font($black, 400, 24px, 34px);
+                margin-bottom: 20px;
+                text-align: center;
+            }
+            &-extremity{
+                margin-bottom: 16px;
+                margin-top: 25px;
+                span{
+                    @include font($black, 700, 15px, 20px);
+                }
+            }
+            &-afraid{
+                span{
+                    @include font($black, 700, 15px, 20px);
+                }
+            }
+            &-price{
+                p{
+                    @include font($white, 700, 16px, 20px);
+                }
+                &-text{
+                    @include font($black, 700, 20px, 20px);
+                    margin-left: 10px;
+                }
+                &-waid{
+                    @include font($black, 700, 15px, 20px);
+                }
+            }
+        }
+    }
+    p{
+        @include font($black, 400, 15px, 20px);
+    }
+    .container{
+        hr{
+            width: 240px;
+            height: 1px;
+            background-color: $black;
+            margin: 0 auto;
+            margin-top: 60px;
+            box-sizing: content-box;
+            border: none;
+            overflow: visible;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import '../app/app.scss';
+
+.header_our_coffe{
+    background: url('../img/Header/coffe_bg.jpg') no-repeat center /cover;
+    width: 100%;
+    padding-top: 37px;
+    height: 260px; 
+}
+
+.header{
+    &_menu{
+        position: absolute;
+        margin-left: 141px;
+        display: flex;
+        &_list{
+            display: flex;
+            margin-right: 40px;
+            &-cofe{
+                width: 35px;
+                height: 35px;
+                background: url('../img/Header/coffee-beans.svg') no-repeat center;
+            }
+            a{
+                @include font($white, 400, 14px, 17px);
+                text-decoration: none;
+                margin-top: 20px;
+            }
+        }
+    }
+    &_title{
+        @include font($white, 700, 40px, 58px);
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 83px;
+    }
+}
